@@ -1,0 +1,142 @@
+.slide-show
+	width 1200px
+	height 420px
+	font 12px/1.5 "Microsoft YaHei"
+.index-top
+	width 202px
+	height 420px
+	float left
+	background-color #ff3c3c
+.banner
+	width 715px
+	height 420px
+	font 12px/1.5 "Microsoft YaHei"
+	float left
+	margin-left 12px
+	.pic
+		width 715px
+		height 420px
+		margin 0 auto
+		.lst
+			display block
+			.bgs
+				display none
+				&.show
+					display block
+		// &:hover .snow
+		// 	display block
+	.mak
+		width 715px
+		height 42px
+		margin 0 auto
+		position relative
+		.shade
+			width 715px
+			display block
+			height 42px
+			background-color rgba(0,24,0,.5)
+			color rgb(255,255,255)
+			overflow hidden
+			position absolute
+			left 0
+			bottom 42px
+			li
+				display inline-block
+				width 228px
+				&:nth-child(2)
+					background-color rgba(255,0,0,.5)
+				a
+					display block
+					width 228px
+					height 42px
+					cursor pointer
+					.num
+						float left
+						line-height 42px
+						font-weight bold
+						margin-left 20px
+					.txt
+						display block
+						height 42px
+						line-height 42px
+						padding 0 16px 0 0px
+						overflow hidden
+				.sec
+					background-color rgba(255,0,0,.5)
+		.snow
+			width 40px
+			height 100px
+			display none
+		.prev
+			position absolute
+			left 0
+			bottom 220px
+			background-image url("../img/btns.png")
+			background-repeat no-repeat
+			background-position 0px 0px
+			&:hover
+				background-image url("../img/btns.png")
+				background-repeat no-repeat
+				background-position 0px -110px
+		.next
+			position absolute
+			right 0
+			bottom 220px
+			background-image url("../img/btns.png")
+			background-repeat no-repeat
+			background-position -60px 0px
+			&:hover
+				background-image url("../img/btns.png")
+				background-repeat no-repeat
+				background-position -60px -110px
+.right-slide
+	float right
+	li
+		display none
+		&.show
+			display block
+	.bt-fn
+		width 260px
+		height 40px
+		padding 10px 0
+		background-color red
+		.nums
+			float left
+			span
+				float left
+				display block
+				width 12px
+				height 20px
+				cursor pointer
+				background url("../img/icon.png") -18px -192px no-repeat scroll
+				&.on
+					background url("../img/icon.png") 0 -192px no-repeat scroll
+		.section-fn
+			width 80px
+			float right
+			position relative
+			span
+				display block
+				position absolute
+				top 1px
+				left 30px
+			.skip
+				display block
+				width 19px
+				height 19px
+				background-color blue
+			.prev
+				position absolute
+				top 0
+				left 0
+				background url("../img/icon.png") -0px -218px no-repeat
+				&:hover
+					background url("../img/icon.png") -0px -237px no-repeat
+			.next
+				position absolute
+				top 0
+				right 0px
+				background url("../img/icon.png") -19px -218px no-repeat
+				&:hover
+					background url("../img/icon.png") -19px -237px no-repeat
+		 
